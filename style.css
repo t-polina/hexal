@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "MavenProRegular";
+  src: url("./assets/fonts/MavenPro-Regular.woff") format("woff"), url("./assets/fonts/MavenPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("./assets/fonts/Lato-Bold.woff") format("woff"), url("./assets/fonts/Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("./assets/fonts/Lato-Black.woff") format("woff"), url("./assets/fonts/Lato-Black.woff2") format("woff2");
+}
+
+.hexal-container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.hexal-container .navigation {
+  background-color: #323232;
+  padding: 5px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.hexal-container .navigation::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #e4e9eb;
+  left: 30px;
+  width: 37%;
+  top: 100%;
+  padding-top: 10px;
+}
+
+.hexal-container .navigation::before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #e4e9eb;
+  right: 30px;
+  width: 37%;
+  top: 100%;
+  padding-top: 10px;
+}
+
+.hexal-container .navigation .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hexal-container .navigation ul, .hexal-container .navigation li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hexal-container .navigation ul li {
+  padding: 0 15px;
+}
+
+.hexal-container .navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Lato-Bold", sans-serif;
+}
+
+.hexal-container .navigation ul li a:hover {
+  color: #2eb398;
+}
+
+.hexal-container .navigation ul li .item {
+  color: #2eb398;
+}
+
+.hexal-container .navigation .polygon {
+  -webkit-clip-path: polygon(100% 0, 0 0, 50% 50%);
+          clip-path: polygon(100% 0, 0 0, 50% 50%);
+  position: absolute;
+  top: 100%;
+  background-color: #323232;
+  width: 84px;
+  height: 50px;
+  padding: 0 25px;
+}
+
+.hexal-container .hexagon-content {
+  padding: 40px 20px 20px 20px;
+  position: relative;
+}
+
+.hexal-container .hexagon-content::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #e4e9eb;
+  left: 4%;
+  width: 92%;
+  bottom: 10px;
+}
+
+.hexal-container .hexagon-content .hexagon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hexal-container .hexagon-content .hexagon-block .hexagon {
+  width: 180px;
+  height: 205px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 55px 20px 55px 0;
+  background: no-repeat 50% / cover;
+}
+
+.hexal-container .hexagon-content .hexagon-block-middle {
+  position: absolute;
+  top: 205px;
+  left: 10px;
+}
+
+.hexal-container .hexagon-content .hexagon-block-down {
+  margin-top: 20px;
+}
+
+.hexal-container .blog {
+  padding: 15px 100px;
+  background-color: #2eb398;
+}
+
+.hexal-container .blog .blog-1 {
+  padding: 0 20px;
+  border-left: 1px solid #219d84;
+  border-right: 1px solid #219d84;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hexal-container .blog .blog-1 .blog-content {
+  width: 580px;
+  margin-left: 20px;
+  padding: 55px 20px 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hexal-container .blog .blog-1 .blog-content .name {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "MavenProRegular", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hexal-container .blog .blog-1 .blog-content .profession {
+  color: #248e78;
+  font-size: 18px;
+  font-family: "MavenProRegular", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hexal-container .blog .blog-1 .blog-content .content {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "Lato-Regular", sans-serif;
+  line-height: 1.4;
+}
+
+.hexal-container .blog .blog-1 .blog-content .icons {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0;
+  opacity: 1;
+}
+.hexal-container .blog .blog-1 .blog-content .icons a img:hover {
+  opacity: 0.5;
+}
+
+.hexal-container .blog .blog-1 .hexagon {
+  width: 180px;
+  height: 205px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin: 55px 20px 55px 0;
+  background: no-repeat 50% / cover;
+}
+
+.hexal-container .footer {
+  background-color: #323232;
+  padding: 15px 30px;
+}
+
+.hexal-container .footer .footer-content {
+  padding: 50px 90px 90px 90px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hexal-container .footer .footer-content form {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hexal-container .footer .footer-content form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  color: #ffffff;
+  font-family: "MavenProRegular", sans-serif;
+}
+
+.hexal-container .footer .footer-content form fieldset .form-title {
+  font-size: 30px;
+}
+
+.hexal-container .footer .footer-content form fieldset .form-content {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hexal-container .footer .footer-content form fieldset input, .hexal-container .footer .footer-content form fieldset textarea {
+  padding: 10px 15px;
+  background-color: #454545;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hexal-container .footer .footer-content form fieldset input::-webkit-input-placeholder, .hexal-container .footer .footer-content form fieldset textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.hexal-container .footer .footer-content form fieldset input:-ms-input-placeholder, .hexal-container .footer .footer-content form fieldset textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.hexal-container .footer .footer-content form fieldset input::-ms-input-placeholder, .hexal-container .footer .footer-content form fieldset textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.hexal-container .footer .footer-content form fieldset input::placeholder, .hexal-container .footer .footer-content form fieldset textarea::placeholder {
+  color: #ffffff;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.hexal-container .footer .footer-content form button {
+  background-color: #2eb398;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Lato-Bold", sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hexal-container .footer .footer-content form button:hover, .hexal-container .footer .footer-content form button:focus {
+  background-color: #248b77;
+}
+
+.hexal-container .footer .footer-content .contact-content-footer {
+  width: 175px;
+  padding: 65px 0  0 0;
+}
+
+.hexal-container .footer .footer-content .contact-content-footer p {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Lato-Regular", sans-serif;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.hexal-container .footer .footer-content .contact-content-footer p span {
+  font-family: "Lato-Black", sans-serif;
+}
+
+.hexal-container .footer .footer-content .contact-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 25px;
+}
+
+.hexal-container .footer .footer-content .contact-data p {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Lato-Bold", sans-serif;
+}
+
+.hexal-container .footer .footer-content .contact-data a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Lato-Bold", sans-serif;
+  margin-top: 5px;
+}
+
+.hexal-container .footer .footer-content .contact-data a:hover {
+  color: #2eb398;
+}
+
+.hexal-container .footer .footer-content .contact-data img {
+  margin-right: 5px;
+}
+
+.hexal-container .footer-copyright {
+  background-color: #222222;
+  padding: 20px 40px;
+}
+
+.hexal-container .footer-copyright p {
+  font-size: 12px;
+  font-family: "MavenProRegular", sans-serif;
+  color: #3c3c3c;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
